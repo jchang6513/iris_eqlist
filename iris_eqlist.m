@@ -154,7 +154,6 @@ catch
 end
 
 for i = 2:length(source_data)
-    i
     temp = strsplit(source_data{i},'|','CollapseDelimiters',0);
     
     data(i-1,1:6) = datevec(temp{2},'yyyy-mm-ddTHH:MM:SS');
