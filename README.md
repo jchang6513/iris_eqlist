@@ -1,9 +1,9 @@
 A Matlab code to require earthquake events information from the catalogs submitted to the IRIS DMC. 
 
 The IRIS DMC receives earthquake location and magnitude information from the following sources (catalogs , contributors):
-  USGS NEIC: PDE catalog & near real-time ENS messages. (citation information)
-  ISC (citation information)
-  Global CMT project (citation information)
+USGS NEIC: PDE catalog & near real-time ENS messages. (citation information)
+ISC (citation information)
+Global CMT project (citation information)
 
 Reference:
 IRIS DMC FDSNWS event Web Service Documentation: http://service.iris.edu/fdsnws/event/1/#time
