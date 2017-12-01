@@ -80,7 +80,7 @@ narginchk(minArgs,maxArgs)
 sstr = datestr(datenum(syr,smo,sda),'yyyy-mm-dd');
 estr = datestr(datenum(eyr,emo,eda),'yyyy-mm-dd');
 
-surl = ['http://www.isc.ac.uk/fdsnws/event/1/query?nodata=404&format=text&minmag=2.5&starttime=',sstr,'&endtime=',estr];
+surl = ['http://service.iris.edu/fdsnws/event/1/query?nodata=404&format=text&starttime=',sstr,'&endtime=',estr];
 
 nopt = nargin-6; % number of optional arguments
 
@@ -154,6 +154,7 @@ catch
 end
 
 for i = 2:length(source_data)
+    i
     temp = strsplit(source_data{i},'|','CollapseDelimiters',0);
     
     data(i-1,1:6) = datevec(temp{2},'yyyy-mm-ddTHH:MM:SS');
@@ -161,7 +162,11 @@ for i = 2:length(source_data)
     k = 6;
     for j = [3,4,5,11]
         k = k+1;
-        data(i-1,k) = str2num(temp{j});
+        if (strcmp(temp{j},''))
+            data(i-1,k) = -999;
+        else
+            data(i-1,k) = str2num(temp{j});
+        end
     end
     
     k = 0;
