@@ -10,8 +10,6 @@ Global CMT project (citation information)
 
 
 <br>
-Reference:
-
-IRIS DMC FDSNWS event Web Service Documentation: http://service.iris.edu/fdsnws/event/1/#time
-
+Reference:<br>
+IRIS DMC FDSNWS event Web Service Documentation: http://service.iris.edu/fdsnws/event/1/#time<br>
 Incorporated Research Institutions for Seismology Help: event v.1: http://service.iris.edu/fdsnws/event/docs/1/help/#cite
