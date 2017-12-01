@@ -1,3 +1,5 @@
+# iris_eqlist
+
 A Matlab code to require earthquake events information from the catalogs submitted to the IRIS DMC. 
 
 The IRIS DMC receives earthquake location and magnitude information from the following sources (catalogs , contributors):
