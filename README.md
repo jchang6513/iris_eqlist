@@ -53,10 +53,10 @@
 %                                               orderby=magnitude-asc
 %                                               order by ascending magnitude
 % magtype               String      preferred*  Type of Magnitude used to test minimum and maximum limits. Case insensitive. 
-%                                               Ml ¡X local (Richter) magnitude
-%                                               Ms ¡X surface magnitude
-%                                               mb ¡X body wave magnitude
-%                                               Mw ¡X moment magnitude
+%                                               Ml â€” local (Richter) magnitude
+%                                               Ms â€” surface magnitude
+%                                               mb â€” body wave magnitude
+%                                               Mw â€” moment magnitude
 % updatedafter          String      null        Limit to events updated after the specified time (useful for synchronizing events). (yyyy-mm-dd)
 % includeallmagnitudes	Boolean     false       Retrieve all magnitudes for the event, or only the primary magnitude.
 % eventid               String      null        Retrieve an event based on the unique ID numbers assigned by the IRIS DMC4 
