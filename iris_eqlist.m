@@ -145,10 +145,16 @@ while i <= nopt
     end
 end
 
+if (strfind(surl,'minmag'))
+else
+    surl = [surl,'&minmag=2.5'];
+end
+
+fname = ['iris_eqlist_',datestr(now,'yyyy.mm.dd.HH.MM.SS'),'.txt'];
 try
-    delete 'iris_eqlist_temporary.txt';
-    urlwrite(surl,'iris_eqlist_temporary.txt');
-    source_data=importdata('iris_eqlist_temporary.txt');
+%    delete 'iris_eqlist_temporary.txt';
+    urlwrite(surl,fname);
+    source_data=importdata(fname);
 catch
     error('Error in argument or downloading URL.')
 end
